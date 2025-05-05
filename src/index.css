@@ -1,0 +1,403 @@
+/* ====================================================
+   GLOBAL STYLES (Applies to Every Page)
+   ==================================================== */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2, p {
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ====================================================
+     COMMON COMPONENTS (Used Across the Site)
+     ==================================================== */
+  
+  /* ------------------------------
+     Navbar (Site-wide)
+     ------------------------------ */
+  .navbar {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+    max-width: 100%;
+  }
+  
+  /* Navigation Menu */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  /* Base link & button style for nav list */
+  .nav-list li a,
+  .nav-list li button {
+    text-decoration: none;
+    color: #654167;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Active state for nav links */
+  .nav-list .active {
+    border-bottom: 2px solid #654167;
+    font-weight: bold;
+  }
+  
+  /* Order Now Button */
+  .order-button-nav {
+    padding: 10px 20px;
+    background-color: #38622D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .order-button-nav:hover {
+    background-color: #654167;
+  }
+  
+  /* ------------------------------
+     Hamburger Menu (Mobile Only)
+     ------------------------------ */
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #654167;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  /* ------------------------------
+     Order Form Modal (Site-wide)
+     ------------------------------ */
+  .modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .close-button {
+    background: #ff6600;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* ====================================================
+     HOME PAGE STYLES
+     ==================================================== */
+  
+  /* > Image Carousel Section (Above Home Header) */
+  .image-carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  
+  .carousel-slide {
+    position: relative;
+  }
+  
+  /* Carousel images */
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Carousel Text Overlay */
+  .carousel-text {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ECD517;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .carousel-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-text p {
+    font-size: 1.2rem;
+  }
+  
+  /* > Home Header Section */
+  .home-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #38622D;
+  }
+  
+  .home-header h1 {
+    font-size: 2.5rem;
+    color: #ECD517;
+  }
+  
+  .home-header p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #654167;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cta-button:hover {
+    background-color: #e65c00;
+  }
+  
+  /* > Mission Section */
+  .mission-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  /* > Product Showcase Section */
+  .featured-product {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .featured-product img {
+    margin: 20px 0;
+  }
+  
+  /* ====================================================
+     ABOUT PAGE STYLES
+     ==================================================== */
+  .about-page {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  /* ====================================================
+     PRODUCTS PAGE STYLES
+     ==================================================== */
+  .products-page {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  /* ====================================================
+     CONTACT PAGE STYLES
+     ==================================================== */
+  
+  /* > Contact Details Section */
+  .contact-details {
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+  }
+  
+  .contact-details li {
+    margin-bottom: 10px;
+  }
+  
+  /* > Contact Form Section */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e65c00;
+  }
+  
+  /* ====================================================
+     RESPONSIVE DESIGN
+     ==================================================== */
+  
+  /* > Larger Screens (Desktops) */
+  @media (min-width: 1024px) {
+    .image-carousel {
+      height: 60vh;
+    }
+    .carousel-slide {
+      height: 60vh;
+    }
+    .carousel-slide img {
+      height: 60vh;
+    }
+  }
+  
+  /* > For Medium Screens (Tablets) */
+  @media (max-width: 1024px) {
+    .carousel-text h2 {
+      font-size: 1.5rem;
+    }
+    .carousel-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* > Mobile & Smaller Screens */
+  @media (max-width: 768px) {
+    /* Hamburger menu is visible */
+    .hamburger-menu {
+      display: flex;
+    }
+    
+    /* Hide default horizontal nav-list on mobile */
+    .nav-list {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 20px 0;
+      display: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* Show nav-list when toggled open */
+    .nav-list.open {
+      display: flex;
+    }
+    
+    /* Adjust carousel dimensions */
+    .image-carousel {
+      height: auto;
+    }
+    .carousel-slide {
+      height: auto;
+    }
+    .carousel-slide img {
+      height: auto;
+    }
+    .carousel-text {
+      font-size: 0.9rem;
+      width: 95%;
+    }
+  }
+  
+  /* > For Small Screens (Smartphones) */
+  @media (max-width: 480px) {
+    .carousel-text {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+      bottom: 5%;
+      width: 100%;
+    }
+    
+    .nav-item a {
+      font-size: 0.9rem;
+    }
+    
+    .order-button-nav {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      font-size: 12px;
+    }
+  }
+  
