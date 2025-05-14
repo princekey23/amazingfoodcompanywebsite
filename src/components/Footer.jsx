@@ -1,15 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import BackToTopButton from "./BackToTopButton";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
-      <p>&copy; 2025 Amazing Food Company. All Rights Reserved.</p>
-      <p>
-        Follow us on:
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> Facebook</a>,
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"> Twitter</a>,
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> Instagram</a>
-      </p>
+      <BackToTopButton/>
+      <p>&copy; {currentYear} Amazing Food Company. All Rights Reserved.</p>
+      <small>Designed by <Link to="https://princemwenyemali.vercel.app/" target="_blank">PM | With Love ❤️</Link></small>
     </footer>
   );
 }

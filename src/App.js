@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
+import SpecialPorridge from "./pages/SpecialPorridge";
+import FamilyPorridge from "./pages/FamilyPorridge";
 
 function App() {
   const [showForm, setShowForm] = useState(false);
@@ -21,6 +23,8 @@ function App() {
         <Route path="/" element={<Home onOrderClick={handleOpenForm} />} />
         <Route path="/about" element={<About onOrderClick={handleOpenForm} />} />
         <Route path="/products" element={<Products onOrderClick={handleOpenForm} />} />
+        <Route path="/specialporridge" element={<SpecialPorridge onOrderClick={handleOpenForm} />} />
+        <Route path="/familyporridge" element={<FamilyPorridge onOrderClick={handleOpenForm} />} />
         <Route path="/contact" element={<Contact onOrderClick={handleOpenForm} />} />
       </Routes>
       {showForm && <OrderForm onClose={handleCloseForm} />}
