@@ -509,6 +509,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
   .about-hero h1 {
     font-size: 3.5rem;
@@ -1235,6 +1236,128 @@
     margin: 0 auto;
     padding: 1rem;
     position: relative;
+  }
+  }
+  
+  /* Smaller screens less than 390px */
+  @media (max-width: 390px) {
+  .carousel-slide img {
+    min-height: 80vh;
+  }
+  .carousel-text {
+    width: 95%;
+    padding: 2rem 0;
+  }
+  .carousel-text h2 {
+    font-size: 2rem;
+  }
+  .our-products h1 {
+    font-size: 2rem;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .header-grids {
+    text-align: center;
+  }
+  .header-grids h1,
+  .mission-con h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .progrid {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  .proch {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  .sm {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sm h2 {
+    font-size: larger;
+    text-align: center;
+  }
+  .sm p {
+    font-size: medium;
+  }
+  .sm {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .proimage {
+    width: 75%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /***********************************************************************
+  ************************************************************************
+   About Page
+  ************************************************************************
+  ************************************************************************/
+  .about-page {
+    text-align: center;
+  }
+  .wrap h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .m-image {
+    border-radius: 10px;
+  }
+  .m-headers h2, 
+  .v-content h2,
+  .c-wrapper h2,
+  .m-content h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /***********************************************************************
+  ************************************************************************
+   Products Page
+  ************************************************************************
+  ************************************************************************/
+  .product-hero h1 {
+    font-size: 2.5rem;
+  }
+  .prod-wrapper {
+    text-align: center;
+  }
+  .prod-wrapper h1 {
+  font-size: 2rem;
+  }
+  .teaser-card img {
+     left: 50%;
+     transform: translateX(-50%);
+  }
+  .teaser-card h3 {
+    text-align: center;
+  }
+  .call {
+    text-align: center;
+    width: 90%;
+    margin: 2rem 0;
+  }
+    /***********************************************************************
+  ************************************************************************
+   About Page
+  ************************************************************************
+  ************************************************************************/
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+  .Contact-grids {
+    width: 95%;
+    margin: 0 auto;
   }
   }
   

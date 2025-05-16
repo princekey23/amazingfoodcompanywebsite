@@ -125,10 +125,12 @@ function Home() {
         <article className="progrid">
           <aside className="prochild">
             <div className="proch">
-              <h2>Better Ingredients for a Better Future</h2>
-              <p>🌍 <strong>Sustainably sourced</strong></p>
-              <p>🥣 <strong>Nutritious and easy-to-prepare meals</strong></p>
-              <p>🤝 <strong>Every purchase helps build stronger families</strong></p>
+              <div className="sm">
+                <h2>Better Ingredients for a Better Future</h2>
+                <p>🌍 <strong>Sustainably sourced</strong></p>
+                <p>🥣 <strong>Nutritious and easy-to-prepare meals</strong></p>
+                <p>🤝 <strong>Every purchase helps build stronger families</strong></p>
+              </div>
               <button className="cta-button">
                 <Link to="/about" style={{ textDecoration: "none", color: "white" }}>Discover More</Link>
               </button>
