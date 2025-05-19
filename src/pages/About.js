@@ -1,44 +1,92 @@
 import React from "react";
-import myVideo from "../images/videone.mp4";
+//import myVid from "../images/five.jpg";
 import { Link } from "react-router-dom";
 
 function About() {
   const products = [
     {
       id: 1,
-      title: "Combating Malnutrition:",
+      title: "Addressing Nutritional Gaps:",
       description:
-        "Crafting nutrient-rich foods that directly address dietary deficiencies within the camp and beyond.",
+        "We aim to significantly reduce malnutrition and micronutrient deficiencies among refugees through our fortified porridge flours.",
       image: require("../images/nutrient.jpg"), // Ensure the image is in the correct path
     },
     {
       id: 2,
-      title: "Empowering Communities:",
+      title: "Empowering Women and Children:  ",
       description:
-        "Equipping families with the tools for long-term nutritional and economic stability, starting with the unique needs of Kakuma",
+        "Our products are specifically formulated to meet the unique dietary needs of women and children, promoting better health and development.",
       image: require("../images/comm.png"), // Ensure the image path is correct
     },
     {
       id: 3,
-      title: "Operating Responsibly",
+      title: "Enhancing Production Capacity:",
       description:
-        "Utilizing carefully selected ingredients and sustainable production practices, mindful of the local context in Kakuma",
+        "Seeking funds for better equipment and supplies will enhance our production capacity to meet growing demand in Kakuma and potentially beyond.",
       image: require("../images/food.png"), // Ensure the image path is correct
     },
     {
       id: 4,
-      title: "Championing Equity:",
+      title: "Scaling Production: ",
       description:
-        "Ensuring that access to vital nutrition is a right, not a privilege, beginning with the residents of Kakuma Refugee Camp",
+        "We aspire to expand our operations to serve a greater number of families within Kakuma and extend our reach to other refugee communities in need.",
       image: require("../images/equi.png"), // Ensure the image path is correct
+    },
+    {
+      id: 5,
+      title: "Improving Equipment and Facilities:",
+      description:
+        "Investing in better cereal processing technology is crucial for enhancing the quality and efficiency of our production.",
+      image: require("../images/steel-pipelines-cables-plant.jpg"), // Ensure the image path is correct
+    },
+    {
+      id: 6,
+      title: "Creating Jobs and Empowering Women: ",
+      description:
+        "We empower local women through jobs in manageable production (cleaning, drying, roasting, marketing), fostering dignity and purpose.",
+      image: require("../images/five.jpg"), // Ensure the image path is correct
+    },
+    {
+      id: 7,
+      title: "Enhancing Community Nutrition:",
+      description:
+        "We are committed to continuously improving the nutritional value of our products by utilizing locally available and wholesome ingredients.",
+      image: require("../images/two.jpg"), // Ensure the image path is correct
     },
   ];
   const sections = {
       id: 1,
       title: "Our Purpose: Nourishing Potential, Cultivating Change",
       description:
-        "At Amazing Food Company, based in Kakuma Refugee Camp, we believe nutrition is essential to individual and community well-being. Food is more than sustenance—it empowers, builds resilience, and drives lasting change. We’re committed to fighting malnutrition, uplifting families, and creating accessible, nutritious meals that support healthier futures",
+        "we believe nutrition is essential to individual and community well-being. Food is more than sustenance—it empowers, builds resilience, and drives lasting change. We’re committed to fighting malnutrition, uplifting families, and creating accessible, nutritious meals that support healthier futures",
       image: require("../images/ten.jpg"), // Ensure the image is in the correct path
+    };
+    const Fabiolas = 
+    {
+      id: 1,
+      title: "Our Background",
+      description:
+        "Founded in 2021 by Fabiola Nzoyikorera, a resilient Burundian refugee and agribusiness graduate, Amazing Food Company is a social enterprise based in Kenya's Kakuma Refugee Camp. Driven by a deep understanding of the nutritional challenges in refugee communities, particularly affecting women and children, Fabiola established the company to produce affordable and nutritious fortified porridge flours.",
+      image: require("../images/fabiola2.jpg"), // Ensure the image is in the correct path
+    };
+   const Fabiola =   {
+      id: 2,
+      description:
+        "Fabiola's journey to creating Amazing Food Company began after she fled violence in Burundi and settled in Kakuma with her husband and three children. Drawing upon her degree in Agribusiness, she recognized firsthand the nutritional gaps impacting her own family and the wider refugee community. This personal experience ignited a passion to make a difference, leading her to develop a nutritious oatmeal blend and produce and sell it to other families within the camp.",
+      image: require("../images/fabiola.jpg"), // Ensure the image is in the correct path
+      phone: "tel:0759364736",
+      email: "mailto:amazingfoodcompany65@gmail.com",
+      small: "Got a question? Click below to call or email me!",
+      text: "Let's Talk",
+      mail: "Email Me",
+    };
+  const social = 
+    {
+      id: 1,
+      text: "Our Mission",
+      description:
+        "Amazing Food Company specializes in producing fortified porridge flour using locally sourced cereals. Our current product line includes flour made from:",
+      image: require("../images/children.jpg"), // Ensure the image is in the correct path
     };
 
     const visions =
@@ -61,25 +109,54 @@ function About() {
       <section className="about-hero">
         <div className="about-wrapper">
           <div className="wrap">
-            <h1>About Us - Amazing Food Company</h1>
+            <h1>About Amazing Food Company</h1>
+          </div>
+        </div>
+      </section>
+      <section className="biography">
+        <div className="bio-container">
+          <div className="biocard" key={Fabiolas.id}>
+            <img src={Fabiolas.image} alt={Fabiolas.title} className="bio-image" />
+            <div className="bio-content">
+              <h2>{Fabiolas.title}</h2>
+              <p>{Fabiolas.description}</p>
+            </div>
+          </div>
+          <div className="biocard" key={Fabiola.id}>
+            <div className="bio-content">
+              <p>{Fabiola.description}</p>
+              <div className="bio-cta">
+                  <small>{Fabiola.small}</small>
+                  <div className="biolink">
+                    <Link to={Fabiola.phone} className="biol"><i className="fas fa-phone-volume"/> {Fabiola.text}</Link>
+                    <Link to={Fabiola.email} className="bioli"><i className="fas fa-envelope"/> {Fabiola.mail}</Link>
+                  </div>
+              </div>
+            </div>
+            <img src={Fabiola.image} alt={Fabiola.title} className="bio-image" />
           </div>
         </div>
       </section>
       <section className="about-mission">
         <div className="m-headers">
           <h2>
-            Our Mission: Delivering Nourishment, Driving Sustainable Impact in Kakuma and Beyond
+            Our Mission
           </h2>
           <p> 
-            Our mission is to ensure that every child, regardless of circumstance, 
-            has access to the nourishment essential for healthy growth and development. 
-            Rooted in Kakuma Refugee Camp, we are dedicated to creating and delivering 
-            highly nutritious and affordable meal solutions, particularly for vulnerable 
-            children and empowering women as key caregivers within this community. 
-            Our commitment extends beyond Kakuma as we aim to:
+            Amazing Food Company's core mission is to improve nutrition and health outcomes within 
+            refugee communities by providing affordable, high-quality, and locally made food products, 
+            with a specific focus on the well-being of women and children.
           </p>
         </div>
         <div className="mission-container">
+          <div className="mishead">
+            <div className="headd">
+              <h1>Our Goals</h1>
+              <p>
+                To achieve our mission, Amazing Food Company is guided by the following key goals:
+              </p>
+            </div>
+          </div>
           <div className="mis-container">
           {products.map((product) => (
             <div className="m-iscard" key={product.id}>
