@@ -92,8 +92,8 @@ function About() {
     const visions =
       {
       id: 1,
-      title: "Our Vision: A Future Where Nutrition Empowers All",
-      description: "We envision a world free from hunger, where every family can access the nourishment they need to thrive. Operating from Kakuma, we promote sustainability, community empowerment, and collaboration—working toward a future where every meal strengthens lives and inspires global food security",
+      title: "Social Impact",
+      description: "Amazing Food Company is more than just a business; it represents a community-driven solution addressing critical issues such as food insecurity, women's unemployment, and child malnutrition within one of the world's largest refugee camps. We exemplify the resilience and entrepreneurial spirit of refugees, turning challenges into opportunities to foster community well-being and create a brighter future.",
       image: require("../images/two.jpg"),
     };
     const missions =
