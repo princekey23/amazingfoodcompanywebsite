@@ -1,6 +1,6 @@
 import React from "react";
 import {Link } from 'react-router-dom'
-import SpecialImg from "../images/pouch.png"
+import SpecialImg from "../images/pouch.jpg"
 
 const SpecialPorridge = () => {
   return (

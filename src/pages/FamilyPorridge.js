@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FamilyImg from "../images/pouch1.png"
+import FamilyImg from "../images/pouch.jpg"; // Ensure the image is in the correct path
 
 const FamilyPorridge = () => {
   return (
