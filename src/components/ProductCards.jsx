@@ -23,7 +23,7 @@ const ProductCards = () => {
     <div className="container">
       {products.map((product) => (
         <div className="card" key={product.id}>
-          <img src={product.image} alt={product.title} className="card-image" />
+          <img src={product.image} alt={product.title} className="card-image" width="100%" />
           <div className="card-content">
             <h2>{product.title}</h2>
             <p>{product.description}</p>
