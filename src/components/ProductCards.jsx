@@ -14,7 +14,7 @@ const products = [
     title: "Amazing Special Porridge",
     description:
       "A refined blend of sesame and soya, providing targeted wellness benefits for busy adults, especially women.",
-    image: require("../images/pouch.jpg"), // Ensure the image path is correct
+    image: require("../images/specialporridge.jpg"), // Ensure the image path is correct
   },
 ];
 
