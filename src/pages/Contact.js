@@ -34,6 +34,7 @@ function Contact() {
           <ul className="contact-details">
             <li><i className="fas fa-envelope"/> <strong>Email:</strong> <Link to="mailto:amazingfoodcompany65@gmail.com">amazingfoodcompany65@gmail.com </Link></li>
             <li><i className="fas fa-phone"/> <strong>Phone:</strong> <Link to="tel:+254759364736">+254759364736</Link> | <Link to="+254101771015">0101771015</Link></li>
+            <li><i className="fab fa-facebook"/> <strong>Facebook:</strong> <Link to="https://www.facebook.com/amazingfoodcompany" target="_blank">Amazing Food Company</Link></li>
             <li><i className="fas fa-home"/> <strong>Address:</strong> <Link to="https://www.google.com/maps/dir//Burundian+market,+Kakuma/@3.7513281,34.7288448,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x179fc724be5a72f3:0x5b885b8849d0b24e!2m2!1d34.8112468!2d3.751332?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Burundian market near GLAP enterprises and Lokitaung Primary School.</Link></li>
           </ul>
         </div>
