@@ -10,7 +10,13 @@ import EmpowerCom from "../images/nine.jpg";
 import watoto from "../images/thirteen.jpg";
 import wazazi from "../images/four.jpg";
 import FoodWaste from "../images/one.jpg";
-import Creal from "../images/cereal.jpg"
+import Creal from "../images/cereal.jpg";
+import News from "../images/Newsa.jpeg";
+import News1 from "../images/Newsa1.jpeg";
+import News2 from "../images/Newsa2.jpeg";
+import News3 from "../images/Newsa3.jpeg";
+import News4 from "../images/Newsa4.jpeg";
+import News5 from "../images/Newsa5.jpeg";
 import ProductCards from "../components/ProductCards";
 
 function Home() {
@@ -141,6 +147,65 @@ function Home() {
           </aside>
         </article>
       </section>
+
+    {/* Gallery Photo */}
+
+      <section className="mission-section">
+        <article className="mission-con">
+          <h1>📷 Photo Gallery 🖼️</h1>
+          <p>
+            A glimpse into our journey—empowering caregivers, nourishing children, and protecting our planet.
+          </p>
+          <ul className="listgrid">
+            <li className="listrid"> 
+              <div className="sublist">
+                <img src={wazazi} alt="Caregivers" className="subimage"/>
+              </div>
+             </li>
+            <li className="listrid">
+              <div className="sublist">
+                <img src={FoodWaste} alt="Food" className="subimage"/>
+              </div>
+            </li>
+            <li className="listrid">
+              <div className="sublist">
+                <img src={watoto} alt="Child health" className="subimage"/>
+              </div>
+            </li>
+            <li className="listrid">
+              <div className="sublist">
+                <img src={News} alt="Child health" className="subimage"/>
+              </div>
+            </li>
+            <li className="listrid">
+              <div className="sublist">
+                <img src={News1} alt="Child health" className="subimage"/>
+              </div>
+            </li>
+            <li className="listrid">
+              <div className="sublist">
+                <img src={News2} alt="Child health" className="subimage"/>
+              </div>
+            </li>
+            <li className="listrid">
+              <div className="sublist">
+                <img src={News3} alt="Child health" className="subimage"/>
+              </div>
+            </li>
+            <li className="listrid">
+              <div className="sublist">
+                <img src={News4} alt="Child health" className="subimage"/>
+              </div>
+            </li>
+            <li className="listrid">
+              <div className="sublist">
+                <img src={News5} alt="Food production team" className="subimage"/>
+              </div>
+            </li> 
+          </ul>
+        </article>
+      </section>
+
     </div>
   );
 }
